@@ -4,7 +4,7 @@ const cors = require('cors');
 const dotenv = require('dotenv');
 const bookmarkRoutes = require('./routes/bookmarkRoutes');
 const promoteRoutes = require('./routes/promoteRoutes');
-
+const userRoutes = require('./routes/userRoutes');
 dotenv.config(); //  Load env variables
 
 const app = express();
@@ -22,6 +22,7 @@ mongoose.connect(process.env.MONGO_URI, {
 // Use routes
 app.use('/api/bookmarks', bookmarkRoutes);
 app.use('/api/promote', promoteRoutes);
+app.use('/api/user',userRoutes);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));

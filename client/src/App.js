@@ -9,6 +9,8 @@ import EmployeeDetail from './pages/EmployeeDetail';
 import { BookmarkProvider } from './context/BookmarkContext';
 
 const App = () => (
+  
+
   <div className="h-full w-full bg-gradient-to-br from-blue-100 via-white to-purple-100">
     <BookmarkProvider>
       <Router>
