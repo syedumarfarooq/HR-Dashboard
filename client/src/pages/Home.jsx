@@ -77,7 +77,7 @@ const [error, setError] = useState('');
   const indexOfLastUser = currentPage * usersPerPage;
   const indexOfFirstUser = indexOfLastUser - usersPerPage;
   const currentUsers = filteredUsers.slice(indexOfFirstUser, indexOfLastUser);
-  const totalPages = Math.ceil(filteredUsers.length / usersPerPage)==0?1:Math.ceil(filteredUsers.length / usersPerPage);
+  const totalPages = Math.ceil(filteredUsers.length / usersPerPage)===0?1:Math.ceil(filteredUsers.length / usersPerPage);
   const handleBookmark = async (user) => {
     try {
       await axios.post(`${process.env.REACT_APP_API_URL}/bookmarks`, user);
