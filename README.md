@@ -7,13 +7,13 @@ A modern HR dashboard for tracking employee performance, managing bookmarks, vie
 ![Alt Text](https://res.cloudinary.com/dslnaz9zx/image/upload/v1750796527/Screenshot_2025-06-25_at_1.45.24_AM_w6uwru.png)
 
 ## Filter and Search Feature
-![Alt Text]([image_url](https://res.cloudinary.com/dslnaz9zx/image/upload/v1750796528/Screenshot_2025-06-25_at_1.46.07_AM_p6fgwy.png)
+![Alt Text](https://res.cloudinary.com/dslnaz9zx/image/upload/v1750796528/Screenshot_2025-06-25_at_1.46.07_AM_p6fgwy.png)
 
 ## Analytics Page
-![Alt Text]([image_url](https://res.cloudinary.com/dslnaz9zx/image/upload/v1750796527/Screenshot_2025-06-25_at_1.45.31_AM_jqnkw7.png)
+![Alt Text](https://res.cloudinary.com/dslnaz9zx/image/upload/v1750796527/Screenshot_2025-06-25_at_1.45.31_AM_jqnkw7.png)
 
 ## Add New User Page
-![Alt Text]([image_url](https://res.cloudinary.com/dslnaz9zx/image/upload/v1750796528/Screenshot_2025-06-25_at_1.46.16_AM_lxnnb2.png)
+![Alt Text](https://res.cloudinary.com/dslnaz9zx/image/upload/v1750796528/Screenshot_2025-06-25_at_1.46.16_AM_lxnnb2.png)
 
 
 ---
