@@ -77,7 +77,7 @@ const [error, setError] = useState('');
   const indexOfLastUser = currentPage * usersPerPage;
   const indexOfFirstUser = indexOfLastUser - usersPerPage;
   const currentUsers = filteredUsers.slice(indexOfFirstUser, indexOfLastUser);
-  const totalPages = Math.ceil(filteredUsers.length / usersPerPage);
+  const totalPages = Math.ceil(filteredUsers.length / usersPerPage)==0?1:Math.ceil(filteredUsers.length / usersPerPage);
   const handleBookmark = async (user) => {
     try {
       await axios.post(`${process.env.REACT_APP_API_URL}/bookmarks`, user);
@@ -122,7 +122,13 @@ const [error, setError] = useState('');
     <div className="min-h-screen w-full bg-gradient-to-br from-blue-100 via-white to-purple-100">
       {/* ✅ Top Navigation Bar */}
       <nav className="bg-white shadow-md px-6 py-4 flex justify-between items-center">
-        <h1 className="text-xl font-bold text-blue-900">HR Dashboard</h1>
+        <button onClick={() => {setCurrentPage(1);
+        setSearch('');
+        setSelectedDepartments([]);
+        setSelectedRatings([]);
+
+        }} > <Link to="/" className="text-xl font-bold text-blue-900">HR Dashboard</Link></button>
+       
         <div className="flex gap-4">
           <Link to="/bookmarks" className="text-black-700 hover:underline font-medium">Bookmarks</Link>
           <Link to="/analytics" className="text-black-700 hover:underline font-medium">Analytics</Link>
