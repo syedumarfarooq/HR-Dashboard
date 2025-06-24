@@ -3,7 +3,7 @@ const router = express.Router();
 const Bookmark = require('../models/Bookmark');
 
 // Test route
-router.get('/', (req, res) => res.send('API running'));
+
 
 // Get all bookmarks
 router.get('/', async (req, res) => {

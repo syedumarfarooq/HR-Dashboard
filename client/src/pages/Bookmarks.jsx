@@ -9,6 +9,7 @@ const Bookmarks = () => {
   const fetchBookmarks = async () => {
     try {
       const res = await axios.get(`${process.env.REACT_APP_API_URL}/bookmarks`);
+      console.log('API response:', res.data);
       setBookmarks(res.data);
     } catch (err) {
       console.error('Error loading bookmarks:', err);
@@ -23,6 +24,7 @@ const Bookmarks = () => {
     try {
       await axios.delete(`${process.env.REACT_APP_API_URL}/bookmarks/${id}`);
       setBookmarks(prev => prev.filter(user => user.id !== id));
+      
     } catch (err) {
       console.error('Error deleting bookmark:', err);
     }
